@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&display=swap" rel="stylesheet">
+    <title>Elemental Dominance</title>
+</head>
+<body >
+
+    <div id="wrapper">
+
+        <div id="scoreboard">
+            <h1 id="logo">
+                ELEMENTAL<br>DOMINANCE
+            </h1>
+            <div id="score">
+                <h5 id="scoreTitle">Score</h5>
+                <h1 id="scoreCount">0</h1>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="game"> <!-- If Possible Do Optimise this section -->
+                <div class="element empty"></div>
+                <div class="element empty"></div>
+                <div class="element fire"><img src="Images/Fire.png" alt="#" onclick="elementinput('fire')"></div>
+                <div class="element empty"></div>
+                <div class="element empty"></div>
+
+                <div class="element wind"><img src="Images/Wind.png" alt="#" onclick="elementinput('wind')"></div>
+                <div class="element empty"></div>
+                <div class="element empty" ><img id = "game-play-open"src="Images/book.png" title = "Game Play Description" alt=""></div>
+                <div class="element empty"></div>
+                <div class="element lightning"><img src="Images/Lightning.png" alt="#" onclick="elementinput('lightning')"></div>
+                <div class="element empty"></div>
+                <div class="element plant"><img src="Images/Plant.png" alt="#" onclick="elementinput('plant')"></div>
+                <div class="element empty"></div>
+                <div class="element water"><img src="Images/Water.png" alt="#" onclick="elementinput('water')"></div>
+            </div>
+        </div>
+
+        <div id="results">
+
+            <div class="section userDetails">
+                <h3>YOU<br>PICKED</h3>
+                <div class="element"><img id="userPickedImage" src="Images/Fire.png" alt=""></div>
+            </div>
+
+            <div class="section resultsSection">
+                <h3 id="result-description">YOU WIN !</h3>
+                <div id="playAgainButton">PLAY AGAIN</div>
+            </div>
+
+            <div class="section computerSection">
+                <h3>EVIL WIZARD<br>PICKED</h3>
+                <div class="element" ><img id="computerPickedImage" src="Images/Fire.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="gameplay">
+
+            <div class="slate">
+                <h1>Game Play</h1>
+                <div class="close">Close</div>
+            </div>
+
+            <div class="description">
+                <p id="description-paragraph">
+                    Welcome to the <strong>ELEMENTAL DOMINANCE</strong>.
+                    <br><br>
+                    The goal of the game is to pick the most powerful element than Evil Wizard.<br><br>
+                    You, the mighty wizard saviour of OZ will be playing against Evil Wizard who terrorizes a peacful village.
+                    
+                    <br><br>
+                    <strong>Power Cycle Rules :</strong>
+                    <br><br>
+                    Elements are arranged in life-cycle form, It is representation of the game which shows the power of element against another element.
+
+                    <br><br>
+                    For any element in Elemental Cycle:
+                    <br><br>- The element ahead and the element behind are the support element.
+                    If your opponent throws any of those elements you will be awarded a point.
+                    <br><br>
+                    -The element opposite are destruction or depleting element of choosen element.
+                    If your opponent throws any of those elements you will lose a point.
+                    <br><br>
+                    For same element you will be awarded a point as it seems you are stronger than Evil Wizard hence your element will do more damage.
+                    <br><br>
+                    For example,
+                    If you choose element "Fire" & Evil Wizard throws Wind or Lightning element then you will be awarded a point as those elements increase power of your "Fire" element.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
