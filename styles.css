@@ -3,13 +3,20 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+}
 
-    
+body::-webkit-scrollbar{
+    width:0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background: black;
+}
+body::-webkit-scrollbar-thumb{
+    background:#012e69;
 }
 
 body{
     font-family: 'Barlow', sans-serif;
-    min-height: 100vh;
     min-width: 400px;
     background:radial-gradient(
         134.34% 134.34% at 50% 0%,
@@ -20,7 +27,7 @@ body{
 
 #wrapper{
     display: flex;
-    min-height: 120vh;
+    height: 111vh;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
