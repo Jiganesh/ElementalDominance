@@ -27,7 +27,7 @@ body{
 
 #wrapper{
     display: flex;
-    height: 111vh;
+    min-height: 111vh;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
